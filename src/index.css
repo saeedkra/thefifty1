@@ -5,8 +5,28 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Make sure that html and body take up full height */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enable flex layout for the root element */
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide mapbox-gl attribution control */
+.mapboxgl-ctrl-attrib-inner {
+  display: none;
 } 
