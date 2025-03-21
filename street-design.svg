@@ -1,0 +1,49 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E7EB" stroke-width="0.5"/>
+    </pattern>
+    <rect width="600" height="400" fill="url(#grid)"/>
+    
+    <!-- Street Base -->
+    <path d="M 50 200 L 550 200" stroke="#1A1A1A" stroke-width="80" stroke-linecap="round"/>
+    
+    <!-- Street Lines -->
+    <path d="M 100 200 L 500 200" stroke="white" stroke-width="4" stroke-dasharray="20 20"/>
+    
+    <!-- Sidewalks -->
+    <rect x="50" y="140" width="500" height="20" fill="#E5E7EB" rx="2"/>
+    <rect x="50" y="240" width="500" height="20" fill="#E5E7EB" rx="2"/>
+    
+    <!-- Trees -->
+    <g transform="translate(150, 100)">
+        <circle cx="0" cy="0" r="15" fill="#10B981"/>
+        <rect x="-2" y="15" width="4" height="10" fill="#4B5563"/>
+    </g>
+    <g transform="translate(350, 100)">
+        <circle cx="0" cy="0" r="15" fill="#10B981"/>
+        <rect x="-2" y="15" width="4" height="10" fill="#4B5563"/>
+    </g>
+    <g transform="translate(250, 280)">
+        <circle cx="0" cy="0" r="15" fill="#10B981"/>
+        <rect x="-2" y="-25" width="4" height="10" fill="#4B5563"/>
+    </g>
+    <g transform="translate(450, 280)">
+        <circle cx="0" cy="0" r="15" fill="#10B981"/>
+        <rect x="-2" y="-25" width="4" height="10" fill="#4B5563"/>
+    </g>
+    
+    <!-- AI Elements -->
+    <g transform="translate(300, 200)">
+        <circle cx="0" cy="0" r="30" fill="url(#gradient)" opacity="0.8"/>
+        <path d="M -15 0 L 15 0 M 0 -15 L 0 15" stroke="white" stroke-width="4"/>
+    </g>
+    
+    <!-- Gradient Definition -->
+    <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0066FF"/>
+            <stop offset="100%" stop-color="#00D1FF"/>
+        </linearGradient>
+    </defs>
+</svg> 

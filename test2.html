@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Fifty1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="test-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    
+    <!-- Mapbox GL JS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    
+    <!-- Mapbox Directions -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css">
+    
+    <!-- Mapillary -->
+    <script src="https://unpkg.com/mapillary-js@4.1.0/dist/mapillary.js"></script>
+    <link href="https://unpkg.com/mapillary-js@4.1.0/dist/mapillary.css" rel="stylesheet">
+</head>
+<body class="test-page">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">Fifty1</a>
+                <div class="nav-links">
+                    <a href="about.html">About</a>
+                    <a href="market.html">Market</a>
+                    <a href="test.html" class="active">Test</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="signin.html" class="nav-button">Log In</a>
+                <a href="#demo" class="nav-demo-button">Request Free Demo</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="test-container">
+        <div class="map-interface">
+            <div id="map" class="main-map"></div>
+            <div id="mapillary-viewer" class="street-view"></div>
+            <div class="traffic-signs-panel">
+                <h3>Traffic Signs</h3>
+                <div class="panel-actions">
+                    <button id="restart-btn" class="action-button" disabled>Restart</button>
+                </div>
+                <div id="signs-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="test.js"></script>
+</body>
+</html> 
